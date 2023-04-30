@@ -1,0 +1,10 @@
+@elseif($data->metode_pembayaran == "Saldo") 
+Rp. 0
+@elseif($data->metode_pembayaran == "ovo") 
+Rp. {{ number_format($iPayData['Data']['Fee'], 0, ',','.') }}
+@elseif($data->metode_pembayaran == "qris") 
+Rp. {{ number_format($iPayData['Data']['Fee'], 0, ',','.') }}
+@elseif($data->metode_pembayaran == "alfamart") 
+Rp. {{ number_format($iPayData['Data']['Fee'], 0, ',','.') }}
+@elseif($data->metode_pembayaran == "indomaret") 
+Rp. {{ number_format($iPayData['Data']['Fee'], 0, ',','.') }} 
